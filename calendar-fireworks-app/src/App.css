@@ -1,0 +1,75 @@
+.app-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.calendar-row {
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.unconfirm-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ca0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.confirm-unconfirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+/* Mudar o background geral do calendário */
+.react-calendar {
+  background-color: #ff68ff;  /* fundo escuro */
+  color: rgb(0, 0, 0);            /* cor padrão do texto */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Mudar a cor dos números das datas */
+.react-calendar__tile {
+  background: transparent;
+  color: white;
+}
+
+/* Quando o mouse passa por cima */
+.react-calendar__tile:hover {
+  background-color: #555;
+}
+
+/* Quando uma data está selecionada */
+.react-calendar__tile--active {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Dias de hoje */
+.react-calendar__tile--now {
+  background: #222;
+  color: #ffc107;
+  font-weight: bold;
+}
+
+/* Desabilitar o background dos dias de outro mês */
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #888;
+}
